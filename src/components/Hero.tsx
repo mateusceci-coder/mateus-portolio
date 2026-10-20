@@ -20,13 +20,17 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-5 pt-32 pb-20 sm:px-8 sm:pt-44 sm:pb-28">
         <motion.div
-          className="flex items-center gap-4"
+          className="flex items-center gap-4 sm:gap-5"
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease }}
         >
           {profile.photo ? (
-            <img src={profile.photo} alt="" className="size-12 rounded-xl border border-line object-cover" />
+            <img
+              src={profile.photo}
+              alt=""
+              className="size-16 rounded-2xl border border-line object-cover sm:size-20"
+            />
           ) : (
             <span
               aria-hidden="true"
@@ -36,8 +40,10 @@ export function Hero() {
             </span>
           )}
           <div>
-            <h1 className="text-lg leading-tight font-semibold font-stretch-semi-expanded">{profile.name}</h1>
-            <p className="font-mono text-xs tracking-[0.12em] text-muted uppercase">{t(ui.hero.role)}</p>
+            <h1 className="text-lg leading-tight font-semibold font-stretch-semi-expanded sm:text-xl">
+              {profile.name}
+            </h1>
+            <p className="mt-1 font-mono text-xs tracking-[0.12em] text-muted uppercase">{t(ui.hero.role)}</p>
           </div>
         </motion.div>
 
