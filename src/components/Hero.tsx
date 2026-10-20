@@ -26,7 +26,7 @@ export function Hero() {
           transition={{ duration: 0.5, ease }}
         >
           {profile.photo ? (
-            <img src={profile.photo} alt="" className="size-12 rounded-xl object-cover" />
+            <img src={profile.photo} alt="" className="size-12 rounded-xl border border-line object-cover" />
           ) : (
             <span
               aria-hidden="true"

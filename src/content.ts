@@ -61,8 +61,8 @@ export type Project = {
 
 export const profile = {
   name: 'Mateus Ceci',
-  // TODO: add your photo to /public (e.g. /public/me.webp) and set photo: '/me.webp'.
-  photo: undefined as string | undefined,
+  // Square photo in /public. Set to undefined to show the "MC" monogram instead.
+  photo: '/me.webp' as string | undefined,
   email: 'mateusceci@gmail.com',
   github: 'https://github.com/mateusceci-coder',
   linkedin: 'https://www.linkedin.com/in/mateusceci-coder',

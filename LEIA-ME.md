@@ -16,11 +16,14 @@ Todo o texto do site fica em **`src/content.ts`**, com o português e o inglês 
 
 ### O que ainda falta preencher
 
-- **Foto:** coloque a foto (quadrada) em `public/`, por exemplo `public/eu.webp`, e troque `photo: undefined` por `photo: '/eu.webp'` em `profile`. Sem foto, aparece o monograma "MC".
 - **Link de verificação da Security+:** cole o link da Credly (ou da CompTIA) em `verifyUrl`, no fim do arquivo. Sem link, o botão "Verificar credencial" não aparece.
 - **Vídeos e GIFs do Crash Bash:** coloque os arquivos em `public/projects/crash-bash/` e adicione na lista `media` do projeto. Tem um exemplo comentado no próprio arquivo.
   - Prefira **MP4 ou WebM** curtos e sem som (`type: 'video'`): ficam bem menores que GIF. Eles tocam sozinhos, em loop e mudos.
   - GIF também funciona: use `type: 'image'`.
+
+### Trocar a foto
+
+A foto fica em `public/me.webp` (quadrada, recortada no rosto). Para trocar, substitua o arquivo. Para voltar ao monograma "MC", use `photo: undefined` em `profile`.
 
 ### Adicionar outro projeto
 
